@@ -41,6 +41,7 @@ function newgame(){
 
   global2 = 0;
   totalGlobal2 = 0;
+  document.getElementById('global2').textContent = totalGlobal2;
   current2 = 0;
   total2 = 0;
   document.getElementById('current2').textContent = total2;
@@ -74,8 +75,6 @@ function roll(){
 rollBtn.addEventListener('click', roll);
 //----------------------------------------------------------------------------------
 
-
-
 //function hold button who add current at global
 function hold(){
 
@@ -102,6 +101,9 @@ function hold(){
   winner();
 }
 holdBtn.addEventListener('click', hold);
+//-------------------------------------------------------------------------------
+
+
 
 // ----------------------------------------------- END BODY JS ----------------------------------------------------
 
