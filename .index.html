@@ -1,0 +1,85 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+
+    <link rel="stylesheet" href="http://code.ionicframework.com/1.3.2/fonts/ionicons.svg">
+    <link rel="stylesheet" href="http://code.ionicframework.com/1.3.2/css/ionic.min.css">
+    <link rel="stylesheet" href="http://code.ionicframework.com/1.3.2/js/ionic.min.js">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+
+    <script type="module" src="https://unpkg.com/ionicons@5.5.2/dist/ionicons/ionicons.esm.js"></script>
+    <script nomodule src="https://unpkg.com/ionicons@5.5.2/dist/ionicons/ionicons.js"></script>
+
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Lato:wght@100&display=swap" rel="stylesheet">
+
+    <link rel="stylesheet" href="style.css">
+    <title>Dice game</title>
+</head>
+<body>
+
+    <main>
+
+
+        <button id="newGame" class="Newgame"><ion-icon name="add-circle-outline"></ion-icon>NEW GAME</button>
+
+        <section class="section1">
+
+            <div class="ply">
+                <h2 id="playerTitle1"><ion-icon id="redDot1" class="redDot" name="ellipse-outline"></ion-icon>PLAYER 1</h2>
+                <p class="global-score1" id="global1">
+                    0
+                </p>
+            </div>
+
+            <div class="plc">
+                <h3>CURRENT</h3>
+                <p class="currentScore1" id="current1">
+                    0
+                </p>
+            </div> 
+
+        </section>
+
+       
+
+        <section class="section3">
+
+            <div class="ply">
+                <h2 id="playerTitle2"><ion-icon id="redDot2" class="redDot" name="ellipse-outline"></ion-icon>PLAYER 2</h2>
+                <p class="global-score2" id="global2">
+                    0
+                </p>
+            </div>
+
+            <div class="plc">
+                <h3>CURRENT</h3>
+                <p class="currentScore2" id="current2">
+                    0
+                </p> 
+            </div> 
+
+        </section>
+
+        <section class="section2">
+
+            <div class="container">
+                <img id="dicePicture" class="dice" src="images\dice-6.png"/> 
+            </div>
+                
+            <div>
+                <button id="roll" class="RollBtn"><ion-icon name="sync-outline"></ion-icon>ROLL DICE</button>
+                <button id="btn-hold" class="HoldBtn"><ion-icon name="download-outline"></ion-icon>HOLD</button>   
+            </div>
+                
+
+        </section>
+    </main>
+    
+    <script src="jquery-3.6.0.min.js"></script>
+    <script src="app.js"></script>
+</body>
+</html>

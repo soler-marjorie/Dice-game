@@ -152,7 +152,7 @@ function switchPlayer(){
 function currentStyleCss(){
 
   if (player == 'player1'){
-    main.style.background = 'linear-gradient(90deg, #BDC0C0 50%, white 50%)';
+    main.style.background = 'linear-gradient(#BDC0C0 30%, white 70%)';
     redDot1.style.opacity = '100';
     redDot2.style.opacity = '0';
     playerTitle1.style.fontWeight = 'bolder';
@@ -160,7 +160,7 @@ function currentStyleCss(){
   } 
   
   else if (player == 'player2'){
-    main.style.background = 'linear-gradient(90deg, white 50%, #BDC0C0 50%)';
+    main.style.background = 'linear-gradient(white 30%, #BDC0C0 70%)';
     redDot2.style.opacity = '100';
     redDot1.style.opacity = '0';
     playerTitle2.style.fontWeight = 'bolder';
